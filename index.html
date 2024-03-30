@@ -4,34 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Displaying current Date time</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: black; color: whitesmoke; font-family: Arial, Helvetica, sans-serif">
+<body class="body">
 
-  <h2>Current date and time:(updated) </h2>
-  <span class="js-date-time"></span>
+  <nav>
+    <img src="" alt="logo">
+    <menu>
+      <a href="aboutUs.html">About Us</a>
+    </menu>
+  </nav>
 
-  <script>
-    // function to update the date and time
-    function updateDateTime(){
-      // Create date instance of object Date() - constructor
-      const date = new Date();
-      // get the current date and time as string
-      const currentDateTime = date.toString();
-      //get current hour
-      const currentHour = date.getHours();
-      //get current minute
-      const currentMinute = date.getMinutes();
-      // get current second
-      const currentSecond = date.getSeconds();
-      // get current milisecond
-      const currentMilisecond = date.getMilliseconds();
-      
-      // Put it on web page using DOM
-      document.querySelector('.js-date-time')
-        .innerHTML = `${currentHour} Hours, ${currentMinute} Minutes, ${currentSecond} Seconds, ${currentMilisecond} Miliseconds`;
-    }
+  <h1>etai jibon</h1>
+  <img src="image1.png" alt="nature">
+  <h2>Current date and time:(updated)</h2>
+  <p class="js-date-time"></p>
 
-    setInterval(updateDateTime, 1000);
-  </script>
+
+
+  <script src="date.js"></script>
 </body>
 </html>
